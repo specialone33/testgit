@@ -1,5 +1,5 @@
-<?php if (shell_exec('git pull')) {
-    echo "excecuted shell exec";
+<?php if ($output = shell_exec('git pull')) {
+    echo "excecuted shell exec $output";
 } else {
-    echo "bullshti";
+    echo "bullshti $output";
 }
